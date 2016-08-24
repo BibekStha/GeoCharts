@@ -17,8 +17,9 @@
           ['NP-5', 600],
         ]);
 
-        var options = {}
-        region= 'NP';
+        var options = {
+        region= 'NP'
+        };
 
         var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
 
