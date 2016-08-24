@@ -1,0 +1,32 @@
+<html>                                                                        
+<head>
+  <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+  <script type='text/javascript'>
+   google.load('visualization', '1', {'packages': ['geomap']});
+   google.setOnLoadCallback(drawMap);
+
+    function drawMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['Province', 'Percent'],
+//          ['FR-A', 3.78],           
+//          ['FR-B', 4.09]
+          ['RO-MM', 3.78],
+          ['RO-TM', 3.52],
+
+      ]);
+      var options = {};
+//      options ['region'] = 'FR';      
+      options ['region'] = 'RO';        
+      options ['dataMode'] = 'regions';
+      options ['width'] = '850';        
+      options ['height'] = '650';       
+      var container = document.getElementById('map_canvas');  
+      var geomap = new google.visualization.GeoMap(container);
+      geomap.draw(data, options);
+    };
+  </script>
+</head>
+<body>
+    <div id='map_canvas'></div>
+</body>
+</html>
