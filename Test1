@@ -19,6 +19,7 @@
 
       var options = {
         region: 'NP',
+        displayMode: 'markers',
         colorAxis: {colors: ['green', 'blue']}
       };
 
