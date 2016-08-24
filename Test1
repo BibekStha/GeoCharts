@@ -4,9 +4,9 @@
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
      google.charts.load('current', {'packages': ['geochart']});
-     google.charts.setOnLoadCallback(drawRegionsMap);
+     google.charts.setOnLoadCallback(drawMarkersMap);
 
-      function drawRegionsMap() {
+      function drawMarkersMap() {
       var data = google.visualization.arrayToDataTable([
         ['City',   'Population', 'Area'],
         ['Kathmandu',      2761477,    1285.31],
